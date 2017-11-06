@@ -21,11 +21,7 @@ namespace WordCount.Models
     public static int CountRepeats(string sentence, string word)
     {
       string [] phrase = sentence.ToLower().Split(new Char [] {' ', ',', '.', ':', '/', '\t', ';', '?', '!', '#', });
-      // string _sentence = sentence;
-      // string _word = word;
-      // string [] phrase = sentence.Split(new Char [] {' ', ',', '.', ':', '/', '\t', ';', '?', '!', '#', });
 
-      // string lowerPhrase = phrase.ToLower();
       int counter = 0;
 
       foreach (string currentWord in phrase)
@@ -36,6 +32,7 @@ namespace WordCount.Models
         }
       }
 
+      return counter;
       // for (int i = 0; i <= sentence.Length; i++)
       // {
       //   if(phrase.Contains(word)== true)
@@ -43,7 +40,6 @@ namespace WordCount.Models
       //     counter ++;
       //   }
       // }
-      return counter;
     }
 
     // public string RepeatCounter(string word, string sentence)

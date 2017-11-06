@@ -10,18 +10,6 @@ namespace WordCount.Tests
   public class RepeatCounterTest
   {
 
-    // [TestMethod]
-    // public void CountRepeats_OutputsHowManyInstancesofInputWordAreInInputSentence_Int()
-    // {
-    //   //Arrange
-    //   string sentence = "It is dark and cold outside.";
-    //   string word = "and";
-    //   RepeatCounter testInput = new RepeatCounter(sentence, word);
-    //
-    //   //Act
-    //   string result = testInput
-    // }
-
     [TestMethod]
     public void CountRepeats_CountInstancesofInputtedWordInInputtedSentence_One()
     {
