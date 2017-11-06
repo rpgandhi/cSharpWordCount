@@ -20,15 +20,17 @@ namespace WordCount.Models
 
     public static int CountRepeats(string sentence, string word)
     {
-      string [] phrase = sentence.Split(new Char [] {' ', ',', '.', ':', '/', '\t', ';', '?', '!', '#', });
+      string [] phrase = sentence.ToLower().Split(new Char [] {' ', ',', '.', ':', '/', '\t', ';', '?', '!', '#', });
       // string _sentence = sentence;
       // string _word = word;
       // string [] phrase = sentence.Split(new Char [] {' ', ',', '.', ':', '/', '\t', ';', '?', '!', '#', });
+
+      // string lowerPhrase = phrase.ToLower();
       int counter = 0;
 
       foreach (string currentWord in phrase)
       {
-        if (currentWord == word)
+        if (currentWord == word.ToLower())
         {
           counter++;
         }
