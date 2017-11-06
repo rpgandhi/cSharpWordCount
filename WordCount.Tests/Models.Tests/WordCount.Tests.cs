@@ -26,7 +26,7 @@ namespace WordCount.Tests
     public void CountRepeats_CountInstancesofInputtedWordInInputtedSentence_One()
     {
       //Arrange
-      string sentence = "The blue sky and the birds are blue.";
+      string sentence = "The blue sky.";
       string word = "blue";
       RepeatCounter testSentence = new RepeatCounter(sentence, word);
 
@@ -34,7 +34,7 @@ namespace WordCount.Tests
       int result = testSentence.CountRepeats(sentence, word);
 
       //Assert
-      Assert.AreEqual(2, result);
+      Assert.AreEqual(1, result);
     }
 
     // [TestMethod]
