@@ -19,7 +19,7 @@ namespace WordCount.Tests
       RepeatCounter testSentence = new RepeatCounter(sentence, word);
 
       //Act
-      int result = testSentence.CountRepeats(sentence, word);
+      int result = RepeatCounter.CountRepeats(sentence, word);
 
       //Assert
       Assert.AreEqual(1, result);
